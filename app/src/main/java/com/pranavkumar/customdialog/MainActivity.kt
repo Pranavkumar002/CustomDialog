@@ -35,10 +35,10 @@ class MainActivity : AppCompatActivity() {
         dialogBinding.btnUpdatein.setOnClickListener{
 
             if(dialogBinding.etName.text.toString().isNullOrEmpty()){
-                Toast.makeText(this,"Enter name",Toast.LENGTH_SHORT).show()
+                Toast.makeText(this,getString(R.string.enter_name),Toast.LENGTH_SHORT).show()
             }
             else if(dialogBinding.etAddress.text.toString().isNullOrEmpty()){
-                Toast.makeText(this,"Enter Age",Toast.LENGTH_SHORT).show()
+                Toast.makeText(this,getString(R.string.enter_address),Toast.LENGTH_SHORT).show()
             }
             else{
                 binding.etName.setText(dialogBinding.etName.text.toString())
