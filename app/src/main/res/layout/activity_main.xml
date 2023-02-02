@@ -35,7 +35,7 @@
             android:id="@+id/etName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:editable="false"
+            android:clickable="false"
 
             />
     </com.google.android.material.textfield.TextInputLayout>
@@ -59,7 +59,7 @@
             android:id="@+id/etAddress"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:editable="false"
+            android:clickable="false"
 
             />
     </com.google.android.material.textfield.TextInputLayout>
@@ -78,7 +78,7 @@
             android:id="@+id/etGender"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:editable="false"
+            android:clickable="false"
 
 
             />
