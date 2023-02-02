@@ -20,49 +20,66 @@
 
 
         />
-
-    <TextView
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilenterName"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Enter Name"
-        android:id="@+id/tvEnterName"
-        android:textSize="@dimen/margin_20sp"
-        android:layout_marginTop="@dimen/margin_30dp"
+        android:layout_marginLeft="@dimen/margin_10dp"
+        android:layout_marginRight="@dimen/margin_10dp"
+        android:textColorHint="@color/black"
+        android:layout_marginTop="@dimen/margin_10dp"
+        android:hint="@string/enter_name">
 
-        />
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/margin_60dp"
-        android:text="Enter Name"
-        android:id="@+id/etName"
-        />
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
 
-    <TextView
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilenteraddress"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Enter Address"
-        android:id="@+id/tvEnterAddress"
-        android:textSize="@dimen/margin_20sp"
-        />
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/margin_60dp"
-        android:id="@+id/etAddress"
-        android:text="Enter Email"
-        />
-    <TextView
+        android:layout_marginLeft="@dimen/margin_10dp"
+        android:layout_marginRight="@dimen/margin_10dp"
+        android:textColorHint="@color/black"
+        android:layout_marginTop="@dimen/margin_10dp"
+        android:hint="@string/enter_email">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilgender"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Enter Gender"
-        android:id="@+id/tvEnterGender"
-        android:textSize="@dimen/margin_20sp"
-        />
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/margin_60dp"
-        android:id="@+id/etGender"
-        android:text="Gender"
-        />
+        android:layout_marginLeft="@dimen/margin_10dp"
+        android:layout_marginRight="@dimen/margin_10dp"
+        android:layout_marginTop="@dimen/margin_10dp"
+        android:textColorHint="@color/black"
+        android:hint="@string/enter_gender">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etGender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+
+            />
+    </com.google.android.material.textfield.TextInputLayout>
 
     <Button
         android:layout_width="wrap_content"

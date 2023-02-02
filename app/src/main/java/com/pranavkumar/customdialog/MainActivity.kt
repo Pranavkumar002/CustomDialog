@@ -3,6 +3,7 @@ package com.pranavkumar.customdialog
 import android.app.Dialog
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.WindowManager
 import android.widget.Button
 import android.widget.Toast
 import com.pranavkumar.customdialog.databinding.ActivityMainBinding
@@ -21,6 +22,10 @@ class MainActivity : AppCompatActivity() {
             var dialogBinding = CustomdialogBinding.inflate(layoutInflater)
             var dialog = Dialog(this)
             dialog.setContentView(dialogBinding.root)
+            dialog.window?.setLayout(
+                WindowManager.LayoutParams.MATCH_PARENT,
+                WindowManager.LayoutParams.WRAP_CONTENT
+            )
             dialogBinding.etName.setText(binding.etName.text.toString())
             dialogBinding.etAddress.setText(binding.etAddress.text.toString())
             if (binding.etGender.text.toString().equals("Male")) {

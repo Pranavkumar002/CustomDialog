@@ -1,38 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout
     xmlns:android="http://schemas.android.com/apk/res/android">
-<RelativeLayout
+<LinearLayout
 
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:orientation="vertical">
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilenterName"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_10dp"
+        android:layout_marginRight="@dimen/margin_10dp"
+        android:layout_marginTop="@dimen/margin_10dp"
+        android:hint="@string/enter_name">
 
-    <EditText
-        android:id="@+id/etName"
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilenteraddress"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/margin_10dp"
         android:layout_marginTop="@dimen/margin_10dp"
         android:layout_marginEnd="@dimen/margin_10dp"
         android:layout_marginBottom="@dimen/margin_10dp"
-        android:hint="Enter Name" />
+        android:hint="@string/enter_email">
 
-    <EditText
-        android:id="@+id/etAddress"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/etName"
-        android:layout_marginStart="@dimen/margin_10dp"
-        android:layout_marginTop="@dimen/margin_10dp"
-        android:layout_marginEnd="@dimen/margin_10dp"
-        android:layout_marginBottom="@dimen/margin_10dp"
-        android:hint="Enter Address" />
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            />
+    </com.google.android.material.textfield.TextInputLayout>
     <RadioGroup
         android:id="@+id/rgGender"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/margin_60dp"
-        android:layout_below="@id/etAddress"
-        android:orientation="horizontal">
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_10dp"
+
+        android:orientation="vertical">
 
         <RadioButton
             android:id="@+id/rbMale"
@@ -68,5 +86,5 @@
         android:layout_marginLeft="@dimen/margin_130dp"
         android:layout_marginTop="@dimen/margin_10dp"
         android:text="Update" />
-</RelativeLayout>
+</LinearLayout>
 </layout>
