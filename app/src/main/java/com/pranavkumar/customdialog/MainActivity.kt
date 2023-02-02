@@ -40,10 +40,10 @@ class MainActivity : AppCompatActivity() {
         dialogBinding.btnUpdatein.setOnClickListener{
 
             if(dialogBinding.etName.text.toString().isNullOrEmpty()){
-                Toast.makeText(this,getString(R.string.enter_name),Toast.LENGTH_SHORT).show()
+                dialogBinding.etName.error = "Enter Name"
             }
             else if(dialogBinding.etAddress.text.toString().isNullOrEmpty()){
-                Toast.makeText(this,getString(R.string.enter_address),Toast.LENGTH_SHORT).show()
+                dialogBinding.etAddress.error= "Enter Email"
             }
             else{
                 binding.etName.setText(dialogBinding.etName.text.toString())
